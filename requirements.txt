@@ -1,0 +1,6 @@
+accelerate
+torch
+transformers
+torchaudio
+pyannote.audio
+numpy

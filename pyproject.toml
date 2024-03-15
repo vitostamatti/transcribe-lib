@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transcribe"
+description = ""
+readme = ""
+license = { text = "MIT" }
+authors = [{ name = "Vito Stamatti", email = "vitostamatti@gmail.com" }]
+dependencies = [
+    "accelerate",
+    "torch",
+    "transformers",
+    "torchaudio",
+    "pyannote.audio",
+    "numpy",
+]
+requires-python = ">= 3.10"
+version = "0.1.0"
