@@ -16,5 +16,5 @@ dependencies = [
     "pyannote.audio",
     "numpy",
 ]
-requires-python = ">= 3.10"
+requires-python = ">= 3.6"
 version = "0.1.0"
