@@ -1,20 +1,20 @@
-[build-system]
-requires = ["setuptools>=64"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "transcribe"
-description = ""
-readme = ""
-license = { text = "MIT" }
-authors = [{ name = "Vito Stamatti", email = "vitostamatti@gmail.com" }]
-dependencies = [
-    "accelerate",
-    "torch",
-    "transformers",
-    "torchaudio",
-    "pyannote.audio",
-    "numpy",
-]
-requires-python = ">= 3.6"
 version = "0.1.0"
+description = "Transcribe and diarize liabrary"
+authors = ["vitostamatti <vitostamatti@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+accelerate = "^0.28.0"
+torch = "^2.2.1"
+torchaudio = "^2.2.1"
+pyannote-audio = "^3.1.1"
+numpy = "^1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
