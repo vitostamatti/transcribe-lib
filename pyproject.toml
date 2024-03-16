@@ -7,13 +7,16 @@ readme = "README.md"
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 accelerate = "^0.28.0"
 torch = "^2.2.1"
 torchaudio = "^2.2.1"
 pyannote-audio = "^3.1.1"
 numpy = "^1.26.4"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
 
 [build-system]
 requires = ["poetry-core"]
